@@ -3,19 +3,6 @@
 You are packing **`money`** dollars into **`kids`** ang baos.
 Each kid must get the **same integer amount**, and you must ensure you prepare **enough** even if it doesn’t divide evenly.
 
-**Input**
-
-* `money` (string from input)
-* `kids` (string from input)
-
-**Task**
-
-* Convert inputs properly.
-* Compute:
-
-  * `each = floor(money / kids)`
-  * `needed = ceil(money / kids) * kids`  (total money you must prepare)
-  * `extra = needed - money`
 * Print exactly:
 
 ```
@@ -23,7 +10,21 @@ Each gets: <each>
 Prepare: <needed>
 Extra needed: <extra>
 ```
+```
+**Input  (not to be shown) **
 
+* `money` (string from input)
+* `kids` (string from input)
+
+**Task (not to be shown)**
+
+* Convert inputs properly.
+* Compute:
+
+  * `each = floor(money / kids)`
+  * `needed = ceil(money / kids) * kids`  (total money you must prepare)
+  * `extra = needed - money`
+```
 ---
 
 ## 2) Pineapple Tart Ring Box (pi + round)
