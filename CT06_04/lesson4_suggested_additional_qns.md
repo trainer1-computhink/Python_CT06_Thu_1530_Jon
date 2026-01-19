@@ -3,6 +3,11 @@
 You are packing **`money`** dollars into **`kids`** ang baos.
 Each kid must get the **same integer amount**, and you must ensure you prepare **enough** even if it doesn’t divide evenly.
 
+**Input**
+
+* `money` (string from input)
+* `kids` (string from input)
+
 * Print exactly:
 
 ```
@@ -10,12 +15,8 @@ Each gets: <each>
 Prepare: <needed>
 Extra needed: <extra>
 ```
+
 ```
-**Input  (not to be shown) **
-
-* `money` (string from input)
-* `kids` (string from input)
-
 **Task (not to be shown)**
 
 * Convert inputs properly.
@@ -33,20 +34,21 @@ A pineapple tart box is shaped like a **ring** (donut shape).
 Outer radius = `R`, inner radius = `r` (both in cm).
 Area of ring = π(R² − r²)
 
+```
+Ring area: <area>
+```
+
 **Input**
 
 * `R`, `r` (strings)
 
+```
 **Task**
 
 * Convert to float.
 * Compute area and **round to 2 dp**.
 * Print:
-
 ```
-Ring area: <area>
-```
-
 ---
 
 ## 3) Reunion Dinner Bill Shock (abs + PEMDAS)
@@ -54,10 +56,16 @@ Ring area: <area>
 Your family budgeted `budget` dollars. The final bill is `bill` dollars.
 You want to show how far off you are **in absolute dollars**, but also include a **10% service charge already inside bill** (meaning bill includes it).
 
+```
+Pre-service: <pre_service rounded 2dp>
+Off by: <difference rounded 2dp>
+```
+
 **Input**
 
 * `budget`, `bill` (strings)
 
+```
 **Task**
 
 * Convert to float.
@@ -65,10 +73,6 @@ You want to show how far off you are **in absolute dollars**, but also include a
 * Difference from budget: `abs(pre_service - budget)`
 * Round difference to 2 dp.
 * Print:
-
-```
-Pre-service: <pre_service rounded 2dp>
-Off by: <difference rounded 2dp>
 ```
 
 ---
@@ -78,10 +82,18 @@ Off by: <difference rounded 2dp>
 You have `oranges` oranges and want to pack them into `bags` bags as evenly as possible.
 No bag can have more than 1 orange difference compared to another.
 
+* Print:
+
+```
+Base per bag: <base>
+Bags with one extra: <left>
+```
+
 **Input**
 
 * `oranges`, `bags` (strings)
 
+```
 **Task**
 
 * Convert to int.
@@ -89,11 +101,6 @@ No bag can have more than 1 orange difference compared to another.
 
   * `base = floor(oranges / bags)`
   * `left = oranges - base * bags`
-* Print:
-
-```
-Base per bag: <base>
-Bags with one extra: <left>
 ```
 
 ---
@@ -104,17 +111,19 @@ You want a countdown board that displays:
 `"T-" + seconds + "s"`
 But the input might be `"060"` or `"60"`.
 
-**Input**
-
-* `seconds` (string)
-
-**Task**
-
 * Convert properly to int, then back to string (no leading zeros).
 * Print exactly:
 
 ```
 T-<seconds>s
+```
+
+**Input**
+
+* `seconds` (string)
+
+```
+**Task**
 ```
 
 ---
@@ -147,19 +156,21 @@ Final BPM: <integer>
 
 Two lanterns are hung at positions `a` and `b` (in meters along a corridor).
 A safety officer wants the distance rounded **up** to the next whole meter.
+* Print:
+
+```
+Safety distance: <distance>
+```
 
 **Input**
 
 * `a`, `b` (strings)
 
+```
 **Task**
 
 * Convert to float.
 * Compute `ceil(abs(a - b))`
-* Print:
-
-```
-Safety distance: <distance>
 ```
 
 ---
@@ -170,19 +181,22 @@ A shop shows original price `p` and discount `d` percent (e.g. `15` means 15%).
 Print a nice label like:
 `"Sale: $" + <final price to 2dp>`
 
+Print exactly:
+
+```
+Sale: $<price>
+```
+
 **Input**
 
 * `p`, `d` (strings)
 
+```
 **Task**
 
 * Convert to float.
 * Final = `p * (1 - d/100)`
 * Round to 2 dp.
-* Print exactly:
-
-```
-Sale: $<price>
 ```
 
 ---
@@ -192,21 +206,25 @@ Sale: $<price>
 Each round table has diameter `D` meters. You have a hall length `L` meters.
 You can fit tables in one row with **0.5m gap** between tables.
 
+* Print:
+
+```
+Tables: <max>
+One table area: <area>
+```
+
+
 **Input**
 
 * `D`, `L` (strings)
 
+```
 **Task**
 
 * Convert to float.
 * Table space needed per table = `D + 0.5` (except last table still needs full diameter; using this simplified model is intended)
 * Compute max tables = `floor(L / (D + 0.5))`
 * Also compute table top area of ONE table: `pi*(D/2)**2`, rounded to 2 dp
-* Print:
-
-```
-Tables: <max>
-One table area: <area>
 ```
 
 ---
@@ -217,10 +235,17 @@ A zodiac wheel has 12 animals numbered 0–11.
 Starting position is `start`. The wheel is spun by `spin` steps (can be negative).
 You want the final position but you must do it **without %**.
 
+Print:
+
+```
+Final position: <pos_in_0_to_11>
+```
+
 **Input**
 
 * `start`, `spin` (strings)
 
+```
 **Task**
 
 * Convert to int.
@@ -230,8 +255,4 @@ You want the final position but you must do it **without %**.
   * Adjust to be within 0–11 using only:
 
     * `floor(pos/12)` and multiplication/subtraction
-* Print:
-
-```
-Final position: <pos_in_0_to_11>
 ```
