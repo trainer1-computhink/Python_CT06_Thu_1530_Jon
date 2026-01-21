@@ -28,9 +28,9 @@ Extra needed: <extra>
 ```
 ---
 
-## 2) Pineapple Tart Ring Box (pi + round)
+## 2) Chinese new year goodies container (pi + round)
 
-A pineapple tart box is shaped like a **ring** (donut shape).
+A chinese new year goodies container is shaped like a **ring** (donut shape).
 Outer radius = `R`, inner radius = `r` (both in cm).
 Area of ring = π(R² − r²)
 
