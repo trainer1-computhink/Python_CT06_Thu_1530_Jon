@@ -1,0 +1,40 @@
+Q1. Red Packet Sharing at Grandma’s House
+
+# During Chinese New Year reunion dinner in Singapore, Grandma prepares $88 to give equally to 3 grandchildren in red packets.
+# Each grandchild must receive the same whole-dollar amount, and no one should receive less than their fair share.
+
+# Write a program that asks for the total amount of money and number of grandchildren, then displays how much each grandchild receives in one sentence.
+
+
+# Q2. Chinatown Firecracker Purchase
+
+# A family visits Chinatown to buy firecrackers for Chinese New Year.
+# Each box of firecrackers costs $12.80.
+# There is a 10% festive discount, but after the discount, a fixed $1.50 GST charge is added to the total bill.
+
+# Write a program that asks for the number of boxes bought and prints the final amount payable, rounded to 2 decimal places.
+
+
+# Q3. Pineapple Tart Container at Home
+
+# At home, a family prepares pineapple tarts for visiting relatives.
+# A container can hold up to 2.5 kg of pineapple tarts.
+# Each pineapple tart weighs 0.18 kg.
+
+# Write a program that calculates and displays the maximum number of pineapple tarts that can be placed into the container.
+
+
+# Q4. Lion Dance Drum at the Community Centre
+
+# During a Chinese New Year celebration at a Singapore community centre, a circular lion dance drum is used.
+# The radius of the drum (in cm) is given by the user.
+
+# Write a program that calculates and displays the area of the drum in square centimetres, rounded to the nearest whole number.
+
+
+# Q5. Chinese New Year Zodiac Greeting
+
+# In 2026, a student is curious about their age during Chinese New Year.
+# The student enters their birth year.
+
+# Write a program that calculates the student’s age in 2026 and displays a Chinese New Year greeting stating the age and whether the age is an even or odd number.
