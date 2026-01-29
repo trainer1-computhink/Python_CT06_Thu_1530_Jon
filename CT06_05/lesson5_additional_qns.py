@@ -84,3 +84,59 @@ Example (n = 4):
 Rules:
 - No if / else
 - Nested for loops allowed
+
+1) Alternating Weighted Sum
+---------------------------
+Write a program that calculates the following value for a given n:
+
+1×1 + 2×2 + 3×3 + ... + n×n
+
+Then print the final total.
+
+Example:
+If n = 4
+Total = 1 + 4 + 9 + 16 = 30
+
+Rules:
+- Use a for loop
+- No if / else
+- Accumulate the total inside the loop
+
+
+2) Cumulative Product-Sum
+-------------------------
+Write a program that calculates the following sum:
+
+(1×2) + (2×3) + (3×4) + ... + (n×(n+1))
+
+Example:
+If n = 4
+Total = (1×2) + (2×3) + (3×4) + (4×5)
+      = 2 + 6 + 12 + 20
+      = 40
+
+Rules:
+- Use a for loop
+- No if / else
+
+
+3) Running Accumulated Growth
+-----------------------------
+A number starts at 1.
+
+For each step i from 1 to n:
+- Multiply the number by i
+- Add the result to a running total
+
+Finally, print the total.
+
+Example:
+If n = 4
+Step values: 1, 2, 6, 24
+Total = 1 + 2 + 6 + 24 = 33
+
+Rules:
+- Use a for loop
+- No if / else
+- Use variables to track both the running product and total
+
