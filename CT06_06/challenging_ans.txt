@@ -1,0 +1,155 @@
+Q1
+Correct answer: A
+Explanation:
+range(1, 5) counts 1, 2, 3, 4.
+The number 5 is not included, so the sum is missing the last number.
+That’s why the loop stops too early.
+________________________________________
+Q2
+Correct answer: C
+Explanation:
+total = 0 is inside the loop, so it resets back to 0 every round.
+The total never gets a chance to grow.
+________________________________________
+Q3
+Correct answer: A
+Explanation:
+The code changes i, but total is never updated.
+Since total never changes, it stays 0.
+________________________________________
+Q4
+Correct answer: A
+Explanation:
+The loop is correct, but the code adds 2 every time instead of adding i.
+It should add the number from the loop, not a fixed value.
+________________________________________
+Q5
+Correct answer: A
+Explanation:
+total += 1 adds 1 each loop, not the value of i.
+So the code is counting how many times the loop runs, not summing numbers.
+________________________________________
+Q6
+Correct answer: A
+Explanation:
+total = i replaces the value of total each loop.
+At the end, total only keeps the last value of i, not the sum.
+________________________________________
+
+Q1. (Multiple Errors: syntax / name / type)
+Fixed code:
+total = 0
+for i in range(1, 6):
+    total += i
+print(total)
+
+Fixes needed:
+- Change total from string to integer
+- Add missing colon after for loop
+- Fix variable name totl → total
+
+
+Q2. (Logic Error – reset inside loop)
+Fixed code:
+total = 0
+for i in range(1, 6):
+    total += i
+print(total)
+
+Fix:
+- Remove resetting total = 0 inside the loop
+
+
+Q3. (Logic Error – counting instead of summing)
+Fixed code:
+total = 0
+for i in range(2, 11, 2):
+    total += i
+print(total)
+
+Fix:
+- Add i instead of 1 (summing values, not counting loops)
+
+
+Q4. (Logic Error – off-by-one range)
+Fixed code:
+total = 0
+for i in range(1, 11):
+    total += i
+print(total)
+
+Fix:
+- Change range end from 10 to 11 so 10 is included
+
+
+Q5. (Logic Error – wrong accumulation value)
+Fixed code:
+total = 0
+for i in range(3, 8):
+    total += i
+print(total)
+
+Fix:
+- Add i, not a fixed value (3)
+
+
+Q6. (Logic Error – wrong step size)
+Fixed code:
+total = 0
+for i in range(2, 21, 2):
+    total += i
+print(total)
+
+Fix:
+- Change step size from 1 to 2 so only even numbers are added
+
+
+Q7. (Logic Error – end value missing)
+Fixed code:
+total = 0
+for i in range(3, 31, 3):
+    total += i
+print(total)
+
+Fix:
+- Change range end to 31 so 30 is included
+
+
+Q8. (Logic Error – adding the wrong variable)
+Fixed code:
+n = 6
+total = 0
+for i in range(1, n + 1):
+    total += i
+print(total)
+
+Fix:
+- Add i instead of n
+
+
+Q9. (Logic Error – two totals mixed up)
+Fixed code:
+total1 = 0
+total2 = 0
+
+for i in range(1, 6):
+    total1 += i
+
+for i in range(6, 11):
+    total2 += i
+
+print(total1, total2)
+
+Fix:
+- Accumulate values into the correct variables
+
+
+Q10. (Logic Error – misunderstanding loop range)
+Fixed code:
+total = 0
+for i in range(10, 0, -1):
+    total += i
+print(total)
+
+Fix:
+- Add a negative step so the loop counts down
