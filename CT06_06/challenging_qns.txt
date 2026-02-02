@@ -1,0 +1,197 @@
+Q1.
+This code is supposed to find the sum of numbers from 1 to 5.
+
+total = 0
+for i in range(1, 5):
+    total += i
+print(total)
+
+What is wrong?
+A. The loop stops too early
+B. total should start from 1
+C. += is incorrect
+D. print is in the wrong place
+
+
+Q2.
+This code is supposed to add all numbers from 1 to 5.
+
+for i in range(1, 6):
+    total = 0
+    total += i
+print(total)
+
+What is the main problem?
+A. i should start from 0
+ 
+
+B. range(1, 6) is incorrect
+C. total is reset every loop
+D. print should be inside the loop
+
+
+Q3.
+This code is supposed to add all numbers from 0 to 4 into total.
+
+total = 0
+for i in range(5):
+    i += total
+print(total)
+
+Why does total stay 0?
+A. total is never updated
+B. the loop does not run
+C. range(5) is wrong
+D. i cannot change
+
+
+Q4.
+This code is supposed to find the sum of odd numbers from 1 to 9.
+
+total = 0
+for i in range(1, 10, 2):
+    total += 2
+print(total)
+
+What is the mistake?
+A. The wrong value is added
+B. The range is incorrect
+C. total should start from 1
+D. The step size is wrong
+
+
+Q5.
+This code is supposed to find the sum of numbers from 1 to 5.
+
+total = 0
+for i in range(1, 6):
+    total += 1
+print(total)
+
+What is the code actually doing?
+A. Counting how many times the loop runs
+B. Adding numbers from 1 to 5
+C. Adding only the last number
+D. Nothing
+
+
+Q6.
+This code is supposed to find the sum of numbers from 1 to 5.
+
+total = 0
+for i in range(1, 6):
+    total = i
+print(total)
+
+Why is the answer wrong?
+A. total is overwritten each loop
+B. range(1, 6) is incorrect
+C. i should start from 0
+D. print should be inside the loop
+ 
+DEBUGGING PRACTICE – FOR LOOPS
+
+Read each question carefully.
+The code is supposed to give a specific output, but something is wrong.
+Edit the code so it works correctly.
+
+
+Q1. (Multiple Errors: syntax / name / type)
+This code is supposed to print the sum of numbers from 1 to 5 (15).
+
+total = "0"
+for i in range(1, 6)
+    totl += i
+print(total)
+
+
+Q2. (Logic Error – reset inside loop)
+This code is supposed to print the sum of numbers from 1 to 5 (15).
+
+for i in range(1, 6):
+    total = 0
+    total += i
+print(total)
+
+
+Q3. (Logic Error – counting instead of summing)
+This code is supposed to print the sum of even numbers from 2 to 10 (30).
+
+total = 0
+for i in range(2, 11, 2):
+    total += 1
+print(total)
+
+
+Q4. (Logic Error – off-by-one range)
+This code is supposed to print the sum of numbers from 1 to 10 (55).
+
+total = 0
+for i in range(1, 10):
+    total += i
+print(total)
+
+
+Q5. (Logic Error – wrong accumulation value)
+This code is supposed to print the sum of numbers from 3 to 7 (25).
+
+total = 0
+for i in range(3, 8):
+    total = total + 3
+print(total)
+
+
+Q6. (Logic Error – wrong step size)
+This code is supposed to print the sum of even numbers from 2 to 20 (110).
+
+total = 0
+for i in range(2, 21, 1):
+    total += i
+print(total)
+
+
+Q7. (Logic Error – end value missing)
+This code is supposed to print the sum of multiples of 3 from 3 to 30 (165).
+
+total = 0
+for i in range(3, 30, 3):
+    total += i
+print(total)
+
+
+Q8. (Logic Error – adding the wrong variable)
+This code is supposed to print the sum of numbers from 1 to n.
+If n = 6, it should print 21.
+
+n = 6
+total = 0
+for i in range(1, n + 1):
+    total += n
+print(total)
+
+
+Q9. (Logic Error – two totals mixed up)
+This code is supposed to print:
+• the sum of numbers from 1 to 5 (15)
+• the sum of numbers from 6 to 10 (40)
+
+total1 = 0
+total2 = 0
+
+for i in range(1, 6):
+    total2 += i
+
+for i in range(6, 11):
+    total1 += i
+
+print(total1, total2)
+
+
+Q10. (Logic Error – misunderstanding loop range)
+This code is supposed to print the sum of numbers from 10 to 1
+(10 + 9 + 8 + ... + 1 = 55).
+
+total = 0
+for i in range(10, 0):
+    total += i
+print(total)
