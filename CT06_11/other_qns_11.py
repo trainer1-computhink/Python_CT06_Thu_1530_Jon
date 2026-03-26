@@ -99,4 +99,114 @@ data = ["10", "abc", "5", "20", "-3", "7", "hello"]
 #    - age
 #    - accompanied (yes/no)
  
- 
+ # =========================================
+# TASK 18: Online Order Approval System
+# =========================================
+
+# An online store decides whether to approve an order.
+
+# An order is approved if the customer is not blacklisted and the order
+# amount is at least 50 dollars, or if the customer is a premium member.
+
+# However, if the order amount is more than 500 dollars and the customer
+# is not a premium member, the order must be rejected.
+
+# Otherwise → "Order Rejected"
+
+# 1. Ask for:
+#    - order_amount
+#    - premium_member (yes/no)
+#    - blacklisted (yes/no)
+
+
+# -----------------------------------------
+
+# =========================================
+# TASK 19: School Attendance Warning System
+# =========================================
+
+# A student will receive a warning.
+
+# A warning is issued if the student's attendance is below 75 percent
+# and their homework completion is below 60 percent, or if their
+# attendance is below 50 percent.
+
+# However, if the student has a valid medical reason, no warning
+# should be given.
+
+# Otherwise → "No Warning"
+
+# 1. Ask for:
+#    - attendance
+#    - homework_completion
+#    - medical_reason (yes/no)
+
+
+# -----------------------------------------
+
+# =========================================
+# TASK 20: Secure File Access System
+# =========================================
+
+# A user can access a secure file.
+
+# Access is granted if the user is logged in and has admin rights,
+# or if the user has a valid access code and is not suspended.
+
+# However, if the user is suspended, they should not be allowed access
+# even if they meet other conditions.
+
+# Otherwise → "Access Denied"
+
+# 1. Ask for:
+#    - logged_in (yes/no)
+#    - admin (yes/no)
+#    - access_code_valid (yes/no)
+#    - suspended (yes/no)
+
+
+# -----------------------------------------
+
+# =========================================
+# TASK 21: Ride Entry System
+# =========================================
+
+# A theme park ride allows entry based on safety rules.
+
+# A person can enter the ride if they are at least 140 cm tall and at
+# least 12 years old, or if they are at least 120 cm tall and are
+# accompanied by an adult.
+
+# However, if the person has a medical condition, they are not allowed
+# to enter regardless of other conditions.
+
+# Otherwise → "Entry Denied"
+
+# 1. Ask for:
+#    - height
+#    - age
+#    - accompanied (yes/no)
+#    - medical_condition (yes/no)
+
+
+# -----------------------------------------
+
+# =========================================
+# TASK 22: Gaming Reward System
+# =========================================
+
+# A player receives a reward.
+
+# A reward is given if the player scores at least 1000 points and
+# completes the level, or if the player finds a secret item.
+
+# However, if the player is flagged for cheating, they should not
+# receive any reward even if they meet other conditions.
+
+# Otherwise → "No Reward"
+
+# 1. Ask for:
+#    - score
+#    - level_completed (yes/no)
+#    - found_secret (yes/no)
+#    - cheating (yes/no)
